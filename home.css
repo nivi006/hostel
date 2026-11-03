@@ -1,0 +1,555 @@
+/* ==============================
+   GENERAL STYLING
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 7%;
+    background: rgba(10, 20, 35, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+.logo h2 {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #d6a84f;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #d6a84f;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.login-btn,
+.apply-btn {
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-btn {
+    color: white;
+    border: 1px solid #d6a84f;
+}
+
+.login-btn:hover {
+    background: #d6a84f;
+    color: #111;
+}
+
+.apply-btn {
+    background: #d6a84f;
+    color: #111;
+}
+
+.apply-btn:hover {
+    background: #ffffff;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.65)),
+        url('hostel.jpe');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 120px 10% 80px;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.welcome-text {
+    color: #d6a84f;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 span {
+    color: #d6a84f;
+}
+
+.hero-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #eeeeee;
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #d6a84f;
+    color: #111;
+}
+
+.primary-btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+.secondary-btn {
+    border: 2px solid white;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #111;
+    transform: translateY(-4px);
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+
+.about {
+    padding: 100px 10%;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.section-tag {
+    color: #c09337;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #17263c;
+}
+
+.about h2 span {
+    color: #c09337;
+}
+
+.about p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #17263c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: #c09337;
+}
+
+
+/* ==============================
+   FACILITIES SECTION
+============================== */
+
+.facilities {
+    padding: 90px 7%;
+    text-align: center;
+    background: white;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #17263c;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.facility-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    padding: 35px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 3px solid #d6a84f;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.facility-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.facility-card h3 {
+    font-size: 19px;
+    color: #17263c;
+    margin-bottom: 15px;
+}
+
+.facility-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   CALL TO ACTION SECTION
+============================== */
+
+.cta {
+    padding: 80px 20px;
+    text-align: center;
+    background: #17263c;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #dddddd;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background: #0b1422;
+    color: white;
+    text-align: center;
+    padding: 50px 20px 25px;
+}
+
+.footer-content h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.footer-content h2 span {
+    color: #d6a84f;
+}
+
+.footer-content > p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d6a84f;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        padding: 20px 4%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 12px;
+    }
+
+    .facility-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    .logo h2 {
+        font-size: 23px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #101d30;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        transition: 0.4s;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        padding: 13px 0;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 130px 7% 100px;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .welcome-text {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-bottom {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .about {
+        padding: 70px 7%;
+    }
+
+    .about h2 {
+        font-size: 29px;
+    }
+
+    .facilities {
+        padding: 70px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .facility-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE DEVICES
+============================== */
+
+@media (max-width: 400px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+}

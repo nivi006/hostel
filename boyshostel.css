@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+/* NAVBAR */
+
+header {
+    background: #101d30;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span,
+footer span {
+    color: #d6a84f;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #d6a84f;
+}
+
+.apply-btn {
+    background: #d6a84f;
+    color: #111;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* HERO */
+
+.boys-hero {
+    min-height: 500px;
+    background:
+        linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.65)),
+        url("../images/boys-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+    color: white;
+}
+
+.hero-content > p:first-child {
+    color: #d6a84f;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+    color: #d6a84f;
+}
+
+.hero-content h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero-content > p:nth-of-type(2) {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #d6a84f;
+    color: #111;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: white;
+}
+
+/* ABOUT */
+
+.about-section {
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.section-tag {
+    color: #c09337;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    color: #17263c;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #777;
+    line-height: 1.9;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #17263c;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-btn:hover {
+    background: #d6a84f;
+    color: #111;
+}
+
+/* SECTION HEADING */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    color: #17263c;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #777;
+}
+
+/* FACILITIES */
+
+.facilities-section {
+    background: #f7f8fa;
+    padding: 85px 7%;
+}
+
+.facility-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+    border-bottom: 3px solid #d6a84f;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.facility-card h3 {
+    color: #17263c;
+    margin-bottom: 12px;
+}
+
+.facility-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ROOMS */
+
+.room-section {
+    padding: 85px 7%;
+}
+
+.room-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 25px;
+}
+
+.room-info h3 {
+    color: #17263c;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.room-info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.room-info a {
+    color: #b38735;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RULES */
+
+.rules-section {
+    background: #17263c;
+    padding: 75px 8%;
+    color: white;
+}
+
+.rules-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.rules-container div {
+    padding: 20px;
+    background: rgba(255,255,255,.08);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* CTA */
+
+.cta-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f7f7f7;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    color: #17263c;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.cta-section a {
+    display: inline-block;
+    background: #d6a84f;
+    color: #111;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b1422;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #d6a84f;
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1000px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .room-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px;
+    }
+
+    .nav-links {
+        gap: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .boys-hero {
+        min-height: 420px;
+        padding: 60px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .about-image img {
+        height: 260px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .facility-container,
+    .room-container,
+    .rules-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .facilities-section,
+    .room-section {
+        padding: 60px 6%;
+    }
+}

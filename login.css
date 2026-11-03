@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 950px;
+    min-height: 570px;
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+}
+
+/* Left Image Section */
+
+.login-image {
+    width: 50%;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+        url("../images/hostel-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.image-content {
+    color: white;
+}
+
+.image-content h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.image-content p {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* Login Form */
+
+.login-form {
+    width: 50%;
+    padding: 35px 50px;
+    position: relative;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #17263c;
+    font-size: 14px;
+}
+
+.form-content {
+    max-width: 350px;
+    margin: 55px auto 0;
+}
+
+.form-content h2 {
+    font-size: 30px;
+    color: #17263c;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+/* Input Fields */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #c09337;
+    box-shadow: 0 0 5px rgba(192,147,55,0.2);
+}
+
+/* Form Options */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+    gap: 8px;
+}
+
+.form-options label {
+    color: #555;
+}
+
+.form-options a {
+    color: #c09337;
+    text-decoration: none;
+}
+
+/* Login Button */
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: #17263c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #c09337;
+    color: #111;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+/* Register Link */
+
+.register-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    color: #777;
+}
+
+.register-link a {
+    color: #c09337;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 450px;
+        min-height: auto;
+    }
+
+    .login-image {
+        display: none;
+    }
+
+    .login-form {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .form-content {
+        margin-top: 45px;
+    }
+
+    .form-content h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .login-form {
+        padding: 25px 18px;
+    }
+
+    .form-options {
+        font-size: 11px;
+    }
+}

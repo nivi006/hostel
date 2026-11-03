@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f8f8;
+    color: #17263c;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    min-height: 80px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #17263c;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+}
+
+.logo span,
+.footer span {
+    color: #d6a84f;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #d6a84f;
+}
+
+.nav-btn {
+    background: #d6a84f;
+    color: #17263c;
+    padding: 11px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: white;
+}
+
+/* Hero Section */
+
+.girls-hero {
+    min-height: 600px;
+    background:
+        linear-gradient(rgba(15, 25, 42, 0.65), rgba(15, 25, 42, 0.75)),
+        url("../images/girls-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.tagline,
+.section-tag {
+    color: #d6a84f;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: clamp(42px, 7vw, 70px);
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #d6a84f;
+}
+
+.hero-content p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #eeeeee;
+    margin-bottom: 30px;
+}
+
+.main-btn,
+.outline-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 5px 8px 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-btn {
+    background: #d6a84f;
+    color: #17263c;
+}
+
+.main-btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.outline-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.outline-btn:hover {
+    background: white;
+    color: #17263c;
+}
+
+/* About Section */
+
+.about-section {
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    background: white;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+.about-content h2 span {
+    color: #d6a84f;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+/* Section Heading */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Facilities */
+
+.facilities-section {
+    padding: 90px 8%;
+    background: #f5f6f8;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.facility-card:hover {
+    transform: translateY(-8px);
+    border-bottom-color: #d6a84f;
+}
+
+.facility-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.facility-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.facility-card p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Rooms Section */
+
+.rooms-section {
+    padding: 90px 8%;
+    background: white;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 25px;
+}
+
+.room-info h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.room-info a {
+    color: #b1842e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.room-info a:hover {
+    color: #17263c;
+}
+
+/* Rules Section */
+
+.rules-section {
+    padding: 80px 10%;
+    background: #17263c;
+    color: white;
+}
+
+.rules-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.rules-content h2 {
+    font-size: 35px;
+    margin: 12px 0 25px;
+}
+
+.rules-content ul {
+    list-style: none;
+}
+
+.rules-content li {
+    padding: 12px 10px 12px 35px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    color: #eeeeee;
+    font-size: 14px;
+}
+
+.rules-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 5px;
+    color: #d6a84f;
+    font-weight: bold;
+}
+
+/* CTA Section */
+
+.girls-cta {
+    padding: 80px 8%;
+    text-align: center;
+    background: #f5f6f8;
+}
+
+.girls-cta h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.girls-cta p {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Footer */
+
+.footer {
+    background: #101d30;
+    color: white;
+    text-align: center;
+    padding: 45px 20px 20px;
+}
+
+.footer h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #bbb;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: #d6a84f;
+}
+
+.copyright {
+    border-top: 1px solid #344052;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .facilities-grid,
+    .rooms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        justify-content: center;
+        padding: 18px 5%;
+    }
+
+    .navbar nav {
+        gap: 12px 18px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        padding: 9px 16px;
+    }
+
+    .girls-hero {
+        min-height: 500px;
+        padding: 65px 7%;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .about-content h2,
+    .section-heading h2,
+    .rules-content h2,
+    .girls-cta h2 {
+        font-size: 27px;
+    }
+
+    .facilities-section,
+    .rooms-section {
+        padding: 60px 7%;
+    }
+
+    .facilities-grid,
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-card {
+        padding: 28px 20px;
+    }
+
+    .rules-section {
+        padding: 60px 7%;
+    }
+
+    .girls-cta {
+        padding: 60px 7%;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .navbar nav a {
+        font-size: 11px;
+    }
+
+    .main-btn,
+    .outline-btn {
+        padding: 11px 16px;
+        font-size: 12px;
+    }
+}
