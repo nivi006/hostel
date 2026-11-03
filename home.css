@@ -530,7 +530,7 @@ footer {
 
 /* ==============================
    SMALL MOBILE DEVICES
-============================== */
+============================== 
 
 @media (max-width: 400px) {
 
@@ -553,6 +553,7 @@ footer {
     }
 
 }
+*/
 .menu-toggle {
     display: none;
     background: none;
