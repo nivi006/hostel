@@ -1,14 +1,23 @@
+// Mobile Navigation Toggle
 function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
+
+    if (navLinks) {
+        navLinks.classList.toggle("active");
+    }
 }
+
+// Close menu after clicking a navigation link
 document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".menu-toggle");
     const navLinks = document.getElementById("navLinks");
 
-    if (menuButton && navLinks) {
-        menuButton.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
+    if (navLinks) {
+        const navItems = navLinks.querySelectorAll("a");
+
+        navItems.forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+            });
         });
     }
 });
